@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class TopNavigationBar extends StatelessWidget implements PreferredSizeWidget {
-  final List<Widget>? leftActions; // Botones a la izquierda
-  final List<Widget>? rightActions; // Botones a la derecha
-  final String title; // Título del AppBar
-  final Color? backgroundColor; // Color de fondo del AppBar
+  final List<Widget>? leftActions;
+  final List<Widget>? rightActions;
+  final String title;
+  final Color? backgroundColor;
 
   const TopNavigationBar({
     super.key,
@@ -24,7 +24,7 @@ class TopNavigationBar extends StatelessWidget implements PreferredSizeWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // Acciones a la izquierda
+            // Left actions
             Align(
               alignment: Alignment.centerLeft,
               child: Row(
@@ -32,7 +32,7 @@ class TopNavigationBar extends StatelessWidget implements PreferredSizeWidget {
                 children: leftActions ?? [],
               ),
             ),
-            // Título en el centro
+            // title
             Text(
               title,
               style: const TextStyle(
@@ -42,7 +42,7 @@ class TopNavigationBar extends StatelessWidget implements PreferredSizeWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            // Acciones a la derecha
+            // Right actions
             Align(
               alignment: Alignment.centerRight,
               child: Row(
@@ -57,7 +57,7 @@ class TopNavigationBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(100.0); // Altura estándar de AppBar
+  Size get preferredSize => const Size.fromHeight(100.0); // Appbar height
 }
 
 

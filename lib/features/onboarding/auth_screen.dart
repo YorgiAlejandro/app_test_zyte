@@ -96,7 +96,7 @@ class AuthScreen extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    _showRegisterSheet(context); // Llama a la función para mostrar el sheet
+                    _showRegisterSheet(context);
                   },
                   child: Container(
                     width: double.infinity,
@@ -186,5 +186,4 @@ class AuthScreen extends StatelessWidget {
       },
     );
   }
-
 }

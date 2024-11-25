@@ -4,7 +4,6 @@ import 'package:app_test/shared/top_navigation_bar.dart';
 class NotificationsView extends StatelessWidget {
   NotificationsView({super.key});
 
-  // Lista de notificaciones como ejemplo
   final List<Map<String, String>> notifications = [
     {
       "title": "New Feature Released",
@@ -68,9 +67,9 @@ class NotificationsView extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(width: 8), // Espacio entre el texto y la imagen
+                  const SizedBox(width: 8),
                   Image.asset(
-                    notification["image"]!, // Imagen a la derecha
+                    notification["image"]!,
                     width: 50,
                     height: 50,
                     fit: BoxFit.cover,

@@ -26,8 +26,7 @@ class _RegisterWithEmailState extends State<RegisterWithEmail> {
                 fillColor: Colors.grey[100],
                 hintText: "Your email",
                 hintStyle: TextStyle(color: Colors.grey[400]),
-                contentPadding: const EdgeInsets.only(
-                    top: 8.0, bottom: 8.0, left: 24.0), // Ajusta el relleno
+                contentPadding: const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 24.0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15.0),
                   borderSide: BorderSide.none,
@@ -44,8 +43,7 @@ class _RegisterWithEmailState extends State<RegisterWithEmail> {
                 fillColor: Colors.grey[100],
                 hintText: "Create password",
                 hintStyle: TextStyle(color: Colors.grey[400]),
-                contentPadding: const EdgeInsets.only(
-                    top: 8.0, bottom: 8.0, left: 24.0), // Ajusta el relleno
+                contentPadding: const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 24.0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15.0),
                   borderSide: BorderSide.none,
@@ -62,8 +60,7 @@ class _RegisterWithEmailState extends State<RegisterWithEmail> {
                 fillColor: Colors.grey[100],
                 hintText: "Re-enter password",
                 hintStyle: TextStyle(color: Colors.grey[400]),
-                contentPadding: const EdgeInsets.only(
-                    top: 8.0, bottom: 8.0, left: 24.0), // Ajusta el relleno
+                contentPadding: const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 24.0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15.0),
                   borderSide: BorderSide.none,
@@ -84,8 +81,7 @@ class _RegisterWithEmailState extends State<RegisterWithEmail> {
                       fillColor: Colors.grey[100],
                       hintText: "Name",
                       hintStyle: TextStyle(color: Colors.grey[400]),
-                      contentPadding: const EdgeInsets.only(
-                          top: 8.0, bottom: 8.0, left: 24.0), // Ajusta el relleno
+                      contentPadding: const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 24.0),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15.0),
                         borderSide: BorderSide.none,
@@ -105,8 +101,7 @@ class _RegisterWithEmailState extends State<RegisterWithEmail> {
                       fillColor: Colors.grey[100],
                       hintText: "Last name",
                       hintStyle: TextStyle(color: Colors.grey[400]),
-                      contentPadding: const EdgeInsets.only(
-                          top: 8.0, bottom: 8.0, left: 24.0), // Ajusta el relleno
+                      contentPadding: const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 24.0),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15.0),
                         borderSide: BorderSide.none,

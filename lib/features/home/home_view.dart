@@ -12,9 +12,8 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  bool isTopVisible = true; // Controla la visibilidad del tope de la lista
+  bool isTopVisible = true;
 
-  // Lista de imágenes y títulos para cada elemento
   final List<Map<String, String>> items = [
     {
       "image": "assets/image1.jpg",
@@ -35,14 +34,13 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       body: NotificationListener<ScrollNotification>(
         onNotification: (ScrollNotification scrollInfo) {
-          // Verifica si el scroll está en la parte superior
           if (scrollInfo.metrics.pixels <= 50 && !isTopVisible) {
             setState(() {
-              isTopVisible = true; // Mostrar el AppBar original
+              isTopVisible = true;
             });
           } else if (scrollInfo.metrics.pixels > 50 && isTopVisible) {
             setState(() {
-              isTopVisible = false; // Mostrar el AppBar alternativo
+              isTopVisible = false;
             });
           }
           return true;
@@ -61,7 +59,7 @@ class _HomeViewState extends State<HomeView> {
                     ),
                   ),
               pinned: true,
-              expandedHeight: 300, // Altura máxima del AppBar cuando está expandido
+              expandedHeight: 300,
               backgroundColor: isTopVisible ? Colors.transparent : const Color.fromRGBO(5, 21, 50, 1.0), // Cambia el color según la visibilidad
               flexibleSpace: FlexibleSpaceBar(
                 background: Stack(
@@ -96,7 +94,7 @@ class _HomeViewState extends State<HomeView> {
                     size: 30,
                   ),
                   onPressed: () {
-                    // Acción para el botón
+                    // Do Something
                   },
                 ),
               ],
@@ -229,20 +227,20 @@ class _HomeViewState extends State<HomeView> {
                     height: 250,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage(items[index]["image"]!), // Imagen de fondo
-                        fit: BoxFit.cover, // Ajustar la imagen al contenedor
+                        image: AssetImage(items[index]["image"]!),
+                        fit: BoxFit.cover,
                       ),
-                      borderRadius: BorderRadius.circular(8.0), // Bordes redondeados
+                      borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Center(
                       child: Text(
-                        items[index]["title"]!, // Título diferente para cada contenedor
+                        items[index]["title"]!,
                         style: const TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
                       ),
                     ),
                   );
                 },
-                childCount: items.length, // Número de elementos en la lista
+                childCount: items.length,
               ),
             ),
             
